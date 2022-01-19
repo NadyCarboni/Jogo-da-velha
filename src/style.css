@@ -1,0 +1,124 @@
+/*-----Variáveis----- */
+
+:root {
+  /* Background */
+  --roxoBg: #592880;
+  --pretoBg: #060606;
+  /* Detalhes */
+  --textShadowRosa: 
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #f09,
+  0 0 82px #f09,
+  0 0 92px #f09,
+  0 0 102px #f09,
+  0 0 151px #f09;
+
+}
+
+/*-----Reset----- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at center, var(--roxoBg) 0,  var(--pretoBg)100%);
+ 
+}
+
+
+
+/*-----Cabeçalho----- */
+
+#head {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+
+#head .title {
+  font-family: 'Neonderthaw';
+  animation: pulsate 0.3s infinite;
+  color: var(--rosa);
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: var(--textShadowRosa);
+   margin: 1rem;
+}
+
+.score {
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.score .result {
+  display: flex;
+  
+ 
+
+}
+
+.score .result .player {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 46px 0px rgba(214,36,208,0.9);
+
+}
+/*-----Jogo----- */ 
+#game {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 6rem);
+
+}
+
+.board .space {
+  height: 6rem;
+}
+
+
+/* Animações */
+
+/* @keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+
+}} */
