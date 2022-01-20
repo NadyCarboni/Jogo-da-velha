@@ -99,7 +99,8 @@ i {
 
 .board .space .full {
   color: #fff;
-  font-size: 2rem;
+ 
+  font-size: 3rem;
   text-shadow:
   /* White glow */
   0 0 7px #fff,
@@ -108,7 +109,6 @@ i {
 }
 
 .glow {
-  
   -webkit-animation-name:aparecer;
   -webkit-animation-duration:0.2s;
   -webkit-animation-iteration-count:1;
@@ -117,7 +117,7 @@ i {
   animation-name:aparecer;
   animation-duration:0.2s;
   animation-iteration-count:1;
- animation-delay:0.2s;
+  animation-delay:0.2s;
   animation-fill-mode: forwards;
 }
 

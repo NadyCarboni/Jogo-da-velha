@@ -9,7 +9,9 @@ export default function Game() {
       <div className="user-box">
      <i id="x-turn" className="fas fa-times fa-2x glow"></i>
      </div>
+     {/* <div className="playing-box"> */}
      <Board />
+     {/* <button className='Replay'>Replay</button></div> */}
       <div className="user-box">
      <i id="o-turn"className="far fa-circle fa-2x "></i>
      </div>
