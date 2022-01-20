@@ -20,9 +20,16 @@ export default function Board() {
                 if(X){
                     inner[i] = 'x';
                     setX(false);
+                    
+                    document.getElementById("x-turn").classList.remove('glow');
+                    document.getElementById("o-turn").classList.add('glow');
+
                 } else {
                     inner[i] = 'o';
                     setX(true);
+                    document.getElementById("x-turn").classList.add('glow');
+                    document.getElementById("o-turn").classList.remove('glow');
+
                 }
 
             setSpace(inner);

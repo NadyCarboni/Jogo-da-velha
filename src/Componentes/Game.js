@@ -7,11 +7,11 @@ export default function Game() {
 
   return (<section id="game">
       <div className="user-box">
-     <i className="fas fa-user-alt fa-2x user1"></i>
+     <i id="x-turn" className="fas fa-times fa-2x glow"></i>
      </div>
      <Board />
       <div className="user-box">
-     <i className="fas fa-user-alt fa-2x user2"></i>
+     <i id="o-turn"className="far fa-circle fa-2x "></i>
      </div>
   </section>);
 }

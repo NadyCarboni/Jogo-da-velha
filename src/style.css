@@ -107,8 +107,28 @@ i {
   0 0 30px #fff;
 }
 
+.glow {
+  
+  -webkit-animation-name:aparecer;
+  -webkit-animation-duration:0.2s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-delay:0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name:aparecer;
+  animation-duration:0.2s;
+  animation-iteration-count:1;
+ animation-delay:0.2s;
+  animation-fill-mode: forwards;
+}
 
 /* Animações */
+
+@keyframes aparecer {
+ 100% {
+  text-shadow:0 0 3px #FFE205, 0 0 7px #FFE205, 0 0 20px #EDD205;
+  color:#FFE205;
+ }
+}
 
 /* @keyframes pulsate {
     
