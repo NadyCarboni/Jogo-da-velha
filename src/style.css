@@ -34,6 +34,11 @@
 
 /*-----Cabeçalho----- */
 
+i {
+ color: #592880;
+ margin: 0 3rem;
+}
+
 #head {
   display: flex;
   flex-direction: column;
@@ -59,9 +64,6 @@
 
 .score .result {
   display: flex;
-  
- 
-
 }
 
 .score .result .player {
@@ -83,11 +85,26 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 6rem);
-
 }
 
 .board .space {
   height: 6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0px 0px 12px  rgba(214,36,208,0.9);
+  border-radius: 5px;
+
+}
+
+.board .space .full {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow:
+  /* White glow */
+  0 0 7px #fff,
+  0 0 15px #fff,
+  0 0 30px #fff;
 }
 
 
@@ -122,3 +139,18 @@
     0 0 140px #f09;
 
 }} */
+
+/*-----Mobile----- */
+
+/* @media screen and(max-width: 600px) {
+#game {
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  order: 1;
+}
+
+  
+} */
