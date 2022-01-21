@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+<img src ="https://media2.giphy.com/media/paTz7UZbPfTZFRYnnB/200w.webp?cid=ecf05e47mxc0klzgu24lo1dm0oxfq6nxj7zfid76e7mzt247&rid=200w.webp&ct=s" height="100px" width="auto">
+# Olá!
+Meu nome é Nádia Mirka Carboni e esse daqui é meu projeto para o processo seletivo da empresa Work Doc. 
+<img src ="https://64.media.tumblr.com/eca6223e88abbe5ffc28287b89c8ff36/05ca8367a2c37738-cb/s2048x3072/53cb8b747188cc47285fd2f3c58ddf1bc8662830.png" height="auto" width="100%">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tecnologias utilizadas:
+- JavaScript -> React.js, Node.js
+- CSS
 
-## Available Scripts
+### O que aprendi e pratiquei com o projeto:
+- Coloquei em prática os usos dos hooks em React
+- Relembrei destructuring
+- Efeito de texto neon em CSS
+- Pratiquei animações em CSS
 
-In the project directory, you can run:
+### Prints:
+<p Align="center" >
 
-### `npm start`
+<img src ="https://lh3.googleusercontent.com/-YqDvtOZd2Sw/YeqpG8d9FtI/AAAAAAAAAMM/N0VesQyRorEF1SpvfTcPohtaLvPNLQScwCNcBGAsYHQ/s16000/image.png" height="auto" width="50%">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src ="https://lh3.googleusercontent.com/-JR2Gwset_kg/YeqpObpbj3I/AAAAAAAAAMQ/5hKe3MLhAksvLdZo78PnxocmGCdsieyXACNcBGAsYHQ/s16000/image.png" height="auto" width="50%">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src ="https://lh3.googleusercontent.com/-wUsiukbFDgc/YeqpUtZCIyI/AAAAAAAAAMU/rftrwD9h6jgUtUfNeoPsr5ImmXyCr5jXQCNcBGAsYHQ/s16000/image.png" height="auto" width="50%">
 
-### `npm test`
+<img src ="https://lh3.googleusercontent.com/-f5NHig1I25E/YeqpYb3MulI/AAAAAAAAAMc/FKOIFsbEiq4DdvJ2RYlEcoqRPKxEl5kVACNcBGAsYHQ/s16000/image.png" height="auto" width="50%">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src ="https://64.media.tumblr.com/eca6223e88abbe5ffc28287b89c8ff36/05ca8367a2c37738-cb/s2048x3072/53cb8b747188cc47285fd2f3c58ddf1bc8662830.png" height="auto" width="100%">
 
-### `npm run build`
+### Link do video: [em breve]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Após colonar, como acessar:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Na pasta, no terminal, digite: `npm install` para instalar os módulos node, e após isso `npm start`, para inciar o servidor :)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Espero que gostem e até mais! 
+<img src ="https://media2.giphy.com/media/paTz7UZbPfTZFRYnnB/200w.webp?cid=ecf05e47mxc0klzgu24lo1dm0oxfq6nxj7zfid76e7mzt247&rid=200w.webp&ct=s" height="100px" width="auto">
