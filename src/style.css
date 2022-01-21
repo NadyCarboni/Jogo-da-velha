@@ -2,7 +2,7 @@
 
 :root {
   /* Background */
-  --roxoBg: #592880;
+  --roxo: #592880;
   --pretoBg: #060606;
   /* Detalhes */
   --textShadowRosa: 
@@ -14,8 +14,6 @@
   0 0 92px #f09,
   0 0 102px #f09,
   0 0 151px #f09;
-  
-
 }
 
 /*-----Reset----- */
@@ -27,7 +25,7 @@
 .App {
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(circle at center, var(--roxoBg) 0,  var(--pretoBg)100%);
+  background: radial-gradient(circle at center, var(--roxo) 0,  var(--pretoBg)100%);
  
 }
 
@@ -36,7 +34,7 @@
 /*-----Cabeçalho----- */
 
 i {
- color: #592880;
+ color: var(--roxo);
  margin: 0 3rem;
 }
 
@@ -49,7 +47,6 @@ i {
 
 #head .title {
   font-family: 'Neonderthaw';
-  animation: pulsate 0.3s infinite;
   color: var(--rosa);
   font-size: 5rem;
   color: #fff;
@@ -58,7 +55,7 @@ i {
    margin: 1rem;
 }
 
-.score {
+/* .score {
   font-family: 'Poppins';
   text-align: center;
 }
@@ -73,7 +70,8 @@ i {
   border-radius: 10px;
   box-shadow: 0px 0px 46px 0px rgba(214,36,208,0.9);
 
-}
+} */
+
 /*-----Jogo----- */ 
 #game {
   width: 100vw;
@@ -84,12 +82,10 @@ i {
 }
 
 .turn {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .turn h3 {
@@ -101,10 +97,10 @@ i {
   padding-bottom: 2rem;
 }
 
-
 .board {
   display: grid;
   grid-gap: 1rem;
+  /* Animação fade */
   grid-template-columns: repeat(3, 6rem);
   -webkit-animation-name:aparecer;
   -webkit-animation-duration:1s;
@@ -132,27 +128,14 @@ i {
 
 .board .space .full {
   color: #fff;
- 
   font-size: 3rem;
   text-shadow:
-  /* White glow */
   0 0 7px #fff,
   0 0 15px #fff,
   0 0 30px #fff;
 }
 
-.glow {
-  -webkit-animation-name:mudar;
-  -webkit-animation-duration:0.2s;
-  -webkit-animation-iteration-count:1;
-  -webkit-animation-delay:0.2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-name:mudar;
-  animation-duration:0.2s;
-  animation-iteration-count:1;
-  animation-delay:0.2s;
-  animation-fill-mode: forwards;
-}
+
 #result {
   color: #fff;
   display: flex;
@@ -175,6 +158,7 @@ i {
   animation-delay:0.2s;
   animation-fill-mode: forwards;
 }
+
 .aparecerKeyframeResult {
   -webkit-animation-name:aparecerResult;
   animation-name:aparecerResult;
@@ -219,6 +203,18 @@ i {
   color: #fff;
 }
 
+.glow {
+  -webkit-animation-name:mudar;
+  -webkit-animation-duration:0.2s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-delay:0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name:mudar;
+  animation-duration:0.2s;
+  animation-iteration-count:1;
+  animation-delay:0.2s;
+  animation-fill-mode: forwards;
+}
 /* Animações */
 
 @keyframes mudar {
@@ -240,47 +236,21 @@ i {
   }
  }
 
-@keyframes pulsate {
-    
-  100% {
-
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #f09,
-      0 0 80px #f09,
-      0 0 90px #f09,
-      0 0 100px #f09,
-      0 0 150px #f09;
-  
-  }
-  
-  0% {
-
-    text-shadow:
-    0 0 4px #fff,
-    0 0 10px #fff,
-    0 0 18px #fff,
-    0 0 38px #f09,
-    0 0 73px #f09,
-    0 0 80px #f09,
-    0 0 94px #f09,
-    0 0 140px #f09;
-
-}}
-
 /*-----Mobile----- */
 
-/* @media screen and(max-width: 600px) {
-#game {
-  display: flex;
-  flex-direction: column;
-}
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(3, 4rem);
+  }
 
-.board {
-  order: 1;
-}
+  .board .space {
+    height: 4rem;
+  }
 
+  #head .title {
+    font-size: 4rem;
+    margin: 2rem 4rem;
+    
+  }
   
-} */
+}

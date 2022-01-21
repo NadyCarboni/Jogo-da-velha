@@ -17,6 +17,8 @@ export default function Board() {
     if(vencedor) {
         score = vencedor;
             if (score === '×') {
+                document.getElementById("x-turn").classList.remove('glow');
+                document.getElementById("o-turn").classList.remove('glow');
                     return (
                     <div id="result" className='aparecerKeyframeResult'>
                         O vencedor é: <span>{score}</span>
@@ -27,6 +29,8 @@ export default function Board() {
                     </div>
                 );
             } else if (score === 'o') {
+                document.getElementById("x-turn").classList.remove('glow');
+                document.getElementById("o-turn").classList.remove('glow');
                     return (
                     <div id="result" className='aparecerKeyframeResult'>
                         O vencedor é: <span>{score}</span>
@@ -40,6 +44,8 @@ export default function Board() {
     } else {
          // verifica se tem elementos vazios
             if (space.every(verificar)) {
+                document.getElementById("x-turn").classList.remove('glow');
+                document.getElementById("o-turn").classList.remove('glow');
                 return (
                 <div id="result" className='aparecerKeyframeResult ' >
                 O vencedor é: <span>Deu velha!</span>
