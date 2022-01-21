@@ -1,31 +1,62 @@
 import React, {useState} from 'react';
+import "aos/dist/aos.css";
 import Space from './Space';
 
 export default function Board() {
-    // Estado pra ve
-
     let arrNum = Array(9).fill(null);
     const [space, setSpace] = useState(arrNum);
     const [X, setX] = useState(true); // Começa com o x, então o estado inicia em true
-    const [pointsP1, setPointsP1] = useState(0);
-    const [pointsP2, setPointsP2] = useState(0);
-
     const vencedor = win(space); 
     let score;
+
+    function refresh(e) {
+        window.location.reload();
+        e.preventDefault()
+    }
     
     if(vencedor) {
         score = vencedor;
             if (score === '×') {
-                console.log('x')
+                    return (
+                    <div id="result" className='aparecerKeyframeResult'>
+                        O vencedor é: <span>{score}</span>
+                        <button onClick={refresh}>
+                             <i className="fas fa-redo-alt"></i>
+                            Replay
+                        </button>
+                    </div>
+                );
             } else if (score === 'o') {
-                console.log('0')
+                    return (
+                    <div id="result" className='aparecerKeyframeResult'>
+                        O vencedor é: <span>{score}</span>
+                        <button onClick={refresh}>
+                            <i className="fas fa-redo-alt"></i>
+                            Replay
+                        </button>
+                    </div>
+                );
             } 
     } else {
          // verifica se tem elementos vazios
             if (space.every(verificar)) {
-                console.log('velha')
+                return (
+                <div id="result" className='aparecerKeyframeResult ' >
+                O vencedor é: <span>Deu velha!</span>
+                <button onClick={refresh}>
+                    <i className="fas fa-redo-alt"></i>
+                    Replay
+                </button>
+            </div>)
             }
     }
+
+    // verifica se tem elementos vazios
+    function verificar(element) {
+        return element != null;
+    }
+
+    // Renderizar o espaço
     const renderSpace= (i) => {
         return (
             <Space value={space[i]} onClick = {() => handleClick(i)}/>
@@ -45,7 +76,7 @@ export default function Board() {
                 } else {
                     inner[i] = 'o';
                     setX(true);
-                     // efeito de mostrar em quem está o turno, para melhor experiência do usuário
+                    // efeito de mostrar em quem está o turno, para melhor experiência do usuário
                     document.getElementById("x-turn").classList.add('glow');
                     document.getElementById("o-turn").classList.remove('glow');
                 }
@@ -56,10 +87,7 @@ export default function Board() {
         }
     }
 
-   // verifica se tem elementos vazios
-    function verificar(element) {
-        return element != null;
-    }
+ 
     
    function win(inner){ 
     /* Combinações de vitórias posíveis */
@@ -88,18 +116,17 @@ export default function Board() {
       return null;
     }
   
-  return  (<div className="board">
-
- {renderSpace(0)}
- {renderSpace(1)}
- {renderSpace(2)}
- {renderSpace(3)}
- {renderSpace(4)}
- {renderSpace(5)}
- {renderSpace(6)}
- {renderSpace(7)}
- {renderSpace(8)}
- 
-
-</div>);
+            return (
+            <div className="board aparecerKeyframe" >
+                {renderSpace(0)}
+                {renderSpace(1)}
+                {renderSpace(2)}
+                {renderSpace(3)}
+                {renderSpace(4)}
+                {renderSpace(5)}
+                {renderSpace(6)}
+                {renderSpace(7)}
+                {renderSpace(8)}
+            </div>
+            );
 }
