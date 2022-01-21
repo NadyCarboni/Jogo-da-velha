@@ -14,6 +14,10 @@
   0 0 92px #f09,
   0 0 102px #f09,
   0 0 151px #f09;
+  --textShadowBranca: 0 0 7px #fff,
+  0 0 15px #fff,
+  0 0 30px #fff;
+  
 }
 
 /*-----Reset----- */
@@ -129,10 +133,7 @@ i {
 .board .space .full {
   color: #fff;
   font-size: 3rem;
-  text-shadow:
-  0 0 7px #fff,
-  0 0 15px #fff,
-  0 0 30px #fff;
+  text-shadow:var(--textShadowBranca);
 }
 
 
@@ -236,6 +237,13 @@ i {
   }
  }
 
+/* -----Seleção----- */
+
+::selection {
+  background-color: rgba(255, 226, 5, 0.5);
+  
+}
+
 /*-----Mobile----- */
 
 @media (max-width: 600px) {
@@ -254,3 +262,4 @@ i {
   }
   
 }
+
