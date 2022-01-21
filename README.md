@@ -27,7 +27,7 @@ Meu nome é Nádia Mirka Carboni e esse daqui é meu projeto para o processo sel
 
 <img src ="https://64.media.tumblr.com/eca6223e88abbe5ffc28287b89c8ff36/05ca8367a2c37738-cb/s2048x3072/53cb8b747188cc47285fd2f3c58ddf1bc8662830.png" height="auto" width="100%">
 
-### Link do video: [em breve]
+### Link do video: [Aqui](https://youtu.be/dLA_UXOVsMw).
 
 ### Após colonar, como acessar:
 
